@@ -1,0 +1,150 @@
+/*通用的方法*/
+.fz-0 {
+  font-size: 0px;
+}
+
+.ta-c {
+  text-align: center;
+}
+
+.ta-r {
+  text-align: right;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+
+.mr-15 {
+  margin-right: 15px;
+}
+
+.mt-15 {
+  margin-top:15px;
+}
+
+.ml-100 {
+  margin-left: 100px;
+}
+
+.p-10 {
+  padding: 10px;
+}
+
+.pt-10 {
+  padding-top: 10px;
+}
+
+.pb-10 {
+  padding-bottom: 10px;
+}
+
+.pl-10 {
+  padding-left: 10px;
+}
+
+.pr-10 {
+  padding-right: 10px;
+}
+
+.f-l {
+  float: left;
+}
+
+.f-r {
+  float: right;
+}
+
+.t-r {
+  text-align: right;
+}
+
+.clearfix:after {
+  content: "";
+  display: block;
+  clear: both;
+  overflow: hidden;
+  height: 0;
+}
+
+
+/*输入框*/
+
+.sy-input-box {
+  float: left;
+  display: inherit;
+  width: 180px;
+}
+
+.sy-input-box .el-date-editor--daterange.el-input {
+  width: 100%;
+}
+
+/*title*/
+.sy-title {
+  font-size: 16px;
+  line-height: 16px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+  padding: 5px 0;
+  color: #4db3ff;
+  font-family:"微软雅黑","黑体";
+  display: inline-block;
+}
+
+.mw-1000 {
+  min-width: 1000px;
+}
+
+.sy-form-title {
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 11px 0 11px 0;
+    color: #48576a;
+    text-align: left;
+}
+
+/*按钮*/
+
+.sy-button-box {
+  float: left;
+  display: inherit;
+  width: 50px;
+}
+
+/*表格*/
+
+.table-padding {
+  padding: 10px;
+}
+
+.sy-table-box {
+  padding: 10px;
+}
+
+.sy-pagination {
+  padding: 10px;
+}
+
+
+/*清除浮动*/
+
+.clearfix:after {
+  content: "";
+  display: block;
+  height: 0;
+  width: 0;
+  clear: both;
+}
