@@ -62,7 +62,8 @@ body {
   padding: 0px;
   font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
   font-weight: 400;
-  background: url(../static/img/bg.jpg) no-repeat center center fixed;
+  /*background: url(../static/img/bg.jpg) no-repeat center center fixed;*/
+  background-color: #2d3a4b;
   background-size: cover;
   -webkit-font-smoothing: antialiased;
 }
