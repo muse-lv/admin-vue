@@ -2,7 +2,7 @@
   <div class="upload-warp" :style="avatarStyle">
     <el-upload :action="action" :show-file-list="false" class="upload" ref="upload" list-type="picture" :on-success="handleAvatarSuccess" :before-upload="beforeAvatarUpload">
       <img v-if="value" :src="value" :style="avatarStyle">
-      <img v-else :src="myDefaultImgSrc" alt="暂无图片" :style="avatarStyle">
+      <img v-else src="../../../assets/img/avatar.jpg" alt="暂无图片" :style="avatarStyle">
       <div class="cover" v-if="showCover">
         <div class="cover-btn">
           <i class="el-icon-edit" @click="onEdit"></i>
@@ -14,7 +14,7 @@
       <slot name="coverIcon"></slot>
     </el-upload>
     <el-dialog v-model="dialogVisible" size="tiny">
-      <img width="100%" :src="value" alt="">
+      <img width="100%" src="../../../assets/img/avatar.jpg" alt="">
     </el-dialog>
   </div>
 </template>
@@ -22,22 +22,19 @@
 import layer from '@/assets/js/layer'
 export default {
   computed: {
-    globalConfig() {
-      return this.$store.getters.getGlobalConfig
-    }
   },
   data() {
     return {
       dialogVisible: false,
       mouseover: false,
-      showCover: false,
+      showCover: true,
       myDefaultImgSrc: ''
     }
   },
   props: {
     action: {
       type: String,
-      default: 'http://admin.92gzb.com/file-service/FileObject/upload'
+      default: 'https://jsonplaceholder.typicode.com/posts/'
     },
     defaultImgSrc: {
       type: String
@@ -55,16 +52,6 @@ export default {
   },
   created() {   
 
-    if (this.myDefaultImgSrc === '') {
-      
-      if (this.globalConfig._default_img_url_) {
-        this.myDefaultImgSrc = this.globalConfig._default_img_url_
-      } else {
-        this.$store.dispatch('updateGlobalConfig').then(()=> {
-          this.myDefaultImgSrc = this.globalConfig._default_img_url_
-        })
-      }
-    }
 
   },
   methods: {

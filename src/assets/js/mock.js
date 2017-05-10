@@ -40,7 +40,7 @@ let mock = {
 	}, {
 		"children": [{
 			"ext": "log:optlog",
-			"icon": "icon-laptop",
+			"icon": "icon-wrench",
 			"nodeName": "操作日志",
 			"pid": 7,
 			"recId": 8
@@ -56,6 +56,31 @@ let mock = {
 		"nodeName": "日志管理",
 		"pid": -1,
 		"recId": 7
+	},{
+		"children": [{
+			"ext": "component:button",
+			"icon": "icon-ok-sign",
+			"nodeName": "按钮",
+			"pid": 1,
+			"recId": 11
+		}, {
+			"ext": "component:upload",
+			"icon": "icon-cloud-upload",
+			"nodeName": "图片上传",
+			"pid": 1,
+			"recId": 12
+		}, {
+			"ext": "component:editor",
+			"icon": "icon-file-alt",
+			"nodeName": "富文本编辑器",
+			"pid": 1,
+			"recId": 12
+		}],
+		"ext": "component",
+		"icon": "icon-th-large",
+		"nodeName": "组件",
+		"pid": -1,
+		"recId": 10
 	}],
 	"msg": "操作成功"
 }),

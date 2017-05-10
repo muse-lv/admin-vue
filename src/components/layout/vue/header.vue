@@ -1,7 +1,7 @@
 <template>
   <div class="header clearfix">
-    <div class="header-left">
-      <img src="../../../assets/img/logo.png" class="logo"> <span>AD<i>MIN</i></span>
+    <div class="header-left" @click="toIndex">
+      <img src="../../../assets/img/logo.png" class="logo"> <span>后台管理系统</span>
     </div>
     <div class="header-right">
       <el-tooltip class="item tip-logout" effect="dark" content="退出" placement="bottom">
@@ -21,6 +21,9 @@ export default {
         this.$router.replace('/login')
         localStorage.removeItem('userName')
     	})
+    },
+    toIndex() {
+      this.$router.push('/index')
     }
   }
 }
@@ -36,12 +39,13 @@ export default {
 }
 
 .header-left {
-  font-size: 26px;
+  font-size: 20px;
   float: left;
-}
-
-.header-left i {
   color: #20a0ff;
+  cursor: pointer;
+}
+.header-left span {
+  padding-left: 10px;
 }
 
 .logo {

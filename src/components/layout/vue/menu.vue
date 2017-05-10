@@ -1,8 +1,5 @@
 <template>
   <div class="nav-bar">
-    <h5 class="admin">
-          <i class="fa fa-user" aria-hidden="true"></i>欢迎管理员：{{ userName }}
-    </h5>
     <el-menu :default-active="onRoutes" class="el-menu-vertical-demo" theme="dark" unique-opened router :default-openeds="openeds">
       <template v-for="(item, index) in menu">
         <el-menu-item :index=" item.permCode" v-if="!item.children">
@@ -37,10 +34,6 @@ export default {
       }
     },
     computed: {
-      userName() {
-        let username = localStorage.getItem('userName')
-        return username ? username : ''
-      },
       menuTree() {
         return this.$store.getters.getMenuTree
       },
